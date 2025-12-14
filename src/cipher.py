@@ -1,3 +1,5 @@
+# The cipher script is not to be sent to the client; it's an admin script that takes the data from secure.json, 
+# encrypts it with the same key as the server, and then converts it to binary. Usage: python cipher.py input.json output.bin
 from cryptography.fernet import Fernet
 import sys
 import os
@@ -6,7 +8,7 @@ import os
 # CONFIG
 # =========================
 
-key = b"hp9sOZTjRAFft1rVCnCP7gl4uISTA3pD1NHJ_WM927c="
+key = b"KEY_OF_YOUR_SERVEUR"
 
 if len(sys.argv) != 3:
     print("Usage : python cipher.py input.json output.bin")
