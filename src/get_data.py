@@ -1,3 +1,5 @@
+# The get data script allows you to encrypt and decrypt via the server; for this, you just need to fill in your server's HMAC key and the Ngrok link.
+
 import os, sys
 import uuid
 import datetime
@@ -9,8 +11,8 @@ import requests
 # =========================
 # CONFIG
 # =========================
-SERVER_URL = "https://stannic-uncomprehended-cornelius.ngrok-free.dev/activate"
-HMAC_SECRET = b"\xd8\xa1\x88\xe2\xf4\x9b\x17m\x9f#\xe5\xfa\xbd\xfc\xee\xeb\x96\xca@\x03\xc5\x0cn\x85\xeak4\x9frm)I"
+SERVER_URL = "YOUR_NGROK_LINK"
+HMAC_SECRET = b"YOUR_HMAC_KEY"
 
 LICENSE_PATH = "license.txt"
 MACHINE_ID_PATH = "machine_id.txt"
